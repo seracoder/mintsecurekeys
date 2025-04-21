@@ -45,6 +45,8 @@
 		© {new Date().getFullYear()} MintSecureKeys —
 		<a href="/privacy" class="text-purple-400 hover:underline">
 			Privacy
-		</a>
+		</a> | <a href="https://github.com/seracoder/mintsecurekeys" class="text-purple-400 hover:underline">
+		Github
+	</a>
 	</p>
 </div>
