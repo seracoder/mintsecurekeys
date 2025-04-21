@@ -3,7 +3,19 @@ import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
 const config = {
 	preprocess: vitePreprocess(),
-	kit: { adapter: adapter({ precompress: true }) }
+	kit: {
+		adapter: adapter({
+			precompress: false,
+			fallback: "index.html"
+		}),
+		output: {
+			bundleStrategy: "inline"
+		},
+		router: {
+			type: "hash"
+		}
+	}
+
 };
 
 export default config;
